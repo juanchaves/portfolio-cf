@@ -17,29 +17,28 @@
       </div>
 
       <nav>
-        <button id="right"><i class="fa fa-chevron-circle-right fa-lg" aria-hidden="true"></i></button>
-        <button id="left"><i class="fa fa-chevron-circle-left fa-lg" aria-hidden="true"></i></button>
+        <!-- TODO: add id!!!!!! -->
+        <button id="side-nav-big" onclick="openNav()">&#10094 MENU &#10095</button>
       </nav>
     </header>
 
-    <div id="side-nav"class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="side-nav-small"class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10005</a>
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Clients</a>
       <a href="#">Contact</a>
     </div>
-      <div>
 
+    <div id="main">
+      <div class="skills">
+        <ul>Skills
+          <li>HTML5<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
+          <li>CSS<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
+          <li>JavaScript<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i></li>
+        </ul>
 
-    <div class="skills">
-      <ul>Skills
-        <li>HTML5<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
-        <li>CSS<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
-        <li>JavaScript<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i></li>
-      </ul>
-
-    </div>
+      </div>
 
     <footer>
 <!-- TODO: add links & classes -->
@@ -51,7 +50,7 @@
       </div>
       &copy; 2017 Juan Chaves
     </footer>
-
+    </div>
     <script src="constructor.js"></script>
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
