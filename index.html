@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One|Oswald|Raleway" rel="stylesheet">
     <script src="https://use.fontawesome.com/2c64b17b78.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <title></title>
   </head>
   <body>
@@ -13,43 +15,57 @@
     <header>
       <!-- TODO: add class-->
       <div class="">
-        <a href="index.html"><img src="img/pic_3_590x590.jpg" alt="logo"></a>
+        <a href="index.html"><img id="logo" src="https://unsplash.it/100/50/?random" alt="logo"></a>
       </div>
 
       <nav>
-        <button id="right"><i class="fa fa-chevron-circle-right fa-lg" aria-hidden="true"></i></button>
-        <button id="left"><i class="fa fa-chevron-circle-left fa-lg" aria-hidden="true"></i></button>
+        <!-- TODO: add id!!!!!! -->
+        <button class="menu" onclick="openNav()">Menu</button>
       </nav>
     </header>
 
     <div id="side-nav"class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10005</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
-      <div>
 
+    <div id="main">
+      <div class="about" style="background-color:black;color:white;height:30em;width:100%">
 
-    <div class="skills">
-      <ul>Skills
-        <li>HTML5<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
-        <li>CSS<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
-        <li>JavaScript<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i></li>
-      </ul>
+      </div>
 
+      <div class="services" style="background-color:blue;color:white;height:30em;width:100%;">
+
+      </div>
+
+      <div class="projects" style="background-color:green;color:white;height:30em;width:100%">
+
+      </div>
+
+      <div class="skills" style="background-color:blue;color:white;height:30em;width:100%">
+        <ul>Skills
+          <li>HTML5<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
+          <li>CSS<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i></li>
+          <li>JavaScript<i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i></li>
+        </ul>
+
+      </div>
     </div>
 
     <footer>
 <!-- TODO: add links & classes -->
-      <div class="">
+
+      <div class="contact">
         <a class="" href="https://github.com/juanchaves"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
         <a class="" href="https://twitter.com/_jchav_"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
         <a class="" href="https://www.linkedin.com/in/juanmcr"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         <a class="" href="https://www.meetup.com/members/214007574/"><i class="fa fa-meetup fa-2x" aria-hidden="true"></i></a>
       </div>
-      &copy; 2017 Juan Chaves
+    &copy; 2017 Juan Chaves
     </footer>
 
     <script src="constructor.js"></script>

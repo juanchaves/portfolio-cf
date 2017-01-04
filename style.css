@@ -1,2 +1,114 @@
 
-/*.side-nav-wrapper {visibility: hidden;}*/
+body, html { height: 100%; color: #818181 }
+
+img { max-width: 100%; height: auto; }
+
+h1, h2, h3, h4 {font-family: 'Oswald', sans-serif;}
+
+p, a, ul {font-family: 'Raleway', sans-serif;}
+
+/*.parallax {*/
+    /* The image used */
+    /*background-image: url("img_parallax.jpg");*/
+
+    /* Full height */
+    /*height: 100%;*/
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
+
+/*div {
+    width: 100%;
+    height: 400px;
+    background-image: url('img_flowers.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
+
+/* TODO: @media mobile with simple backgound */
+@media screen and (min-device-width: 400px) {
+  .about, .services, .projects, .skills {
+      width: 100%;
+      height: auto;
+      background-image: url('https://unsplash.it/g/200/300');
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+}
+
+/* TODO: @media non-mobile with flashier background */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    /*background-color: #212121;*/
+}
+
+#logo{
+  float: right;
+  background-image: url('https://unsplash.it/100/50/?random');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu {
+	background-color: transparent;
+	border: 2px solid #818181;
+	display: inline-block;
+	cursor: pointer;
+	color: #818181;
+	font-family: 'Kumar One', cursive;
+	font-size: 1em;
+	padding: 8px 30px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #FCFCFC;
+  position: relative;
+	top: 1px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+}
