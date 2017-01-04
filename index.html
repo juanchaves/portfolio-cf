@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One|Oswald|Raleway" rel="stylesheet">
     <script src="https://use.fontawesome.com/2c64b17b78.js"></script>
     <title></title>
   </head>
@@ -13,21 +14,21 @@
     <header>
       <!-- TODO: add class-->
       <div class="">
-        <a href="index.html"><img src="img/pic_3_590x590.jpg" alt="logo"></a>
+        <a href="index.html"><img id="logo" src="https://unsplash.it/100/100/?random" alt="logo"></a>
       </div>
 
       <nav>
         <!-- TODO: add id!!!!!! -->
-        <button id="side-nav-big" onclick="openNav()">&#10094 MENU &#10095</button>
+        <button class="menu" onclick="openNav()">&#10094 MENU &#10095</button>
       </nav>
     </header>
 
-    <div id="side-nav-small"class="sidenav">
+    <div id="side-nav"class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10005</a>
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
 
     <div id="main">
@@ -42,14 +43,15 @@
 
     <footer>
 <!-- TODO: add links & classes -->
+      <a href="#contact"></a>
       <div class="">
         <a class="" href="https://github.com/juanchaves"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
         <a class="" href="https://twitter.com/_jchav_"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
         <a class="" href="https://www.linkedin.com/in/juanmcr"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         <a class="" href="https://www.meetup.com/members/214007574/"><i class="fa fa-meetup fa-2x" aria-hidden="true"></i></a>
       </div>
-      &copy; 2017 Juan Chaves
-    </footer>
+      
+    </footer>&copy; 2017 Juan Chaves
     </div>
     <script src="constructor.js"></script>
     <script src="app.js"></script>

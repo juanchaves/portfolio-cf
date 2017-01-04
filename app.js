@@ -7,7 +7,7 @@ function openNav() {
     //Js for large screens here
     // TODO: make this jQuery / WORK!!!
 
-    $('#side-nav-big').css({width : '250px'});
+    $('#side-nav').css({width : '250px'});
 
     $('#main').css({marginLeft: '250px'});
 
@@ -15,7 +15,7 @@ function openNav() {
   }
   else {
     //Js for small screens here
-    $('#side-nav-small').css({width : '100%'});
+    $('#side-nav').css({width : '100%'});
   }
 }
 
@@ -24,15 +24,15 @@ function closeNav() {
     //Js for large screens here
     // TODO: make this jQuery
 
-    $('#side-nav-big').css({width : '0'});
+    $('#side-nav').css({width : '0'});
 
     $('#main').css({marginLeft: '0'});
 
-    $('body').css({backgroundColor: 'white'});
+    $('body').css({backgroundColor: 'rgba(0,0,0,0.4)'});
   }
   else {
     //Js for small screens here
-    $('#side-nav-small').css({width : '0'});
+    $('#side-nav').css({width : '0'});
   }
 }
 // TODO: make some sweet SVG graphics

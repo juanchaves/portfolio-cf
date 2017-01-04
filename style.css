@@ -1,25 +1,30 @@
 
+body {background-color: rgba(0,0,0,0.4)}
+
 /* TODO: @media mobile with simple backgound */
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-    
+
 }
 
+
+h1, h2, h3, h4 {font-family: 'Oswald', sans-serif;}
+p, a, ul {font-family: 'Raleway', sans-serif;}
 /* TODO: @media non-mobile with flashier background */
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 .sidenav a {
@@ -46,4 +51,33 @@
 #main {
     transition: margin-left .5s;
     padding: 20px;
+    background-image: image();
+}
+
+#logo{float: right;}
+
+.menu {
+	background-color:transparent;
+	border:2px solid #fcfcfc;
+	display:inline-block;
+	cursor:pointer;
+	color:##CFD8DC;
+	font-family: 'Kumar One', cursive;
+	font-size:17px;
+	padding:8px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #d4d4d4;
+}
+.menu {
+	background-color:transparent;
+}
+.menu {
+	position:relative;
+	top:1px;
+}
+
+footer {
+  background-color: black;
+
+  width: 110%;
 }
