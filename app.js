@@ -1,5 +1,18 @@
 'use strict'
+// TODO: make same page anchor WORK
 
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
 
 // TODO: make this for mobile-first and toggle with non-mobile
 function openNav() {
@@ -28,7 +41,7 @@ function closeNav() {
 
     $('#main').css({marginLeft: '0'});
 
-    $('body').css({backgroundColor: 'rgba(0,0,0,0.4)'});
+    $('body').css({backgroundColor: 'inherit'});
   }
   else {
     //Js for small screens here

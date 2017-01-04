@@ -1,11 +1,25 @@
 
-body { background-color: rgba(0,0,0,0.4) }
+body, html { height: 100%; color: #818181 }
 
 img { max-width: 100%; height: auto; }
 
 h1, h2, h3, h4 {font-family: 'Oswald', sans-serif;}
 
 p, a, ul {font-family: 'Raleway', sans-serif;}
+
+/*.parallax {*/
+    /* The image used */
+    /*background-image: url("img_parallax.jpg");*/
+
+    /* Full height */
+    /*height: 100%;*/
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
 
 /*div {
     width: 100%;
@@ -16,10 +30,14 @@ p, a, ul {font-family: 'Raleway', sans-serif;}
 }*/
 
 /* TODO: @media mobile with simple backgound */
-@media only screen and (min-device-width: 400px) {
-    body {
-        background-image: url('');
-    }
+@media screen and (min-device-width: 400px) {
+  .about, .services, .projects, .skills {
+      width: 100%;
+      height: auto;
+      background-image: url('https://unsplash.it/g/200/300');
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
 }
 
 /* TODO: @media non-mobile with flashier background */
@@ -65,7 +83,7 @@ p, a, ul {font-family: 'Raleway', sans-serif;}
 #main {
     transition: margin-left .5s;
     padding: 20px;
-    background-image: image();
+    /*background-color: #212121;*/
 }
 
 #logo{
@@ -77,10 +95,10 @@ p, a, ul {font-family: 'Raleway', sans-serif;}
 
 .menu {
 	background-color: transparent;
-	border: 2px solid #CFD8DC;
+	border: 2px solid #818181;
 	display: inline-block;
 	cursor: pointer;
-	color: #CFD8DC;
+	color: #818181;
 	font-family: 'Kumar One', cursive;
 	font-size: 1em;
 	padding: 8px 30px;
