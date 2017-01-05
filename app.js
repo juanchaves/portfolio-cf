@@ -1,19 +1,6 @@
 'use strict'
 // TODO: make same page anchor WORK
 
-$('a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
-  }
-});
-
 // TODO: make this for mobile-first and toggle with non-mobile
 function openNav() {
   if ( $(window).width() > 720) {
@@ -48,6 +35,21 @@ function closeNav() {
     $('#side-nav').css({width : '0'});
   }
 }
+$('#side-nav:gt(0)').on('click', function () {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+    closeNav();
+  });
+});
 // TODO: make some sweet SVG graphics
 // ++++++++HTML+++++++
 // <svg id="mySVG">
